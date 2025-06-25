@@ -3,13 +3,13 @@ h1 {
     margin-top: 10vh;
 }
 
-.books {
+.buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.books1 {
+.forms {
     display: flex;
     justify-content: center;
     margin-top: 10px;
