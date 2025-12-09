@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Read</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+    <h1>Books Read</h1>
+    <hr />
+    <div class="books">
+        <button id="btn1">Add</button>
+        <button id="btn2">Edit</button>
+        <button id="btn3">Delete</button>
+    </div>
+    <div class="books1">
+        <form action="/add" method="post" id="fA">
+            <input type="text" name="isbnNo" placeholder="ISBN No">
+            <input type="text" name="title" placeholder="Title:">
+            <input type="text" name="rating" placeholder="Rating: /10">
+            <input type="text" name="dateRead" placeholder="Date Read: yyyy-mm-dd">
+            <input type="text" name="review"placeholder="Review:" >
+            <input type="submit" placeholder="Submit">
+        </form>
+        <form action="/edit" method="post" id="fE">
+            <input type="text" name="title" placeholder="Title:">
+            <input type="text" name="review" placeholder="Review:" >
+            <input type="submit" placeholder="Submit">
+        </form>
+        <form action="/delete" method="post" id="fD">
+            <input type="text" name="title" placeholder="Title:">
+            <input type="submit" placeholder="Submit">
+        </form>
+    </div>
+    <hr />
+    <div id = "book-list">
+        <div class="book-container">
+            <img src ="assets/images/atomic-habits-book-cover.png" alt="book-cover-1">
+            <h2>Atomic Habits</h2>
+            <p>Rating: 8/10</p>
+            <p>Date Read: 2025-06-09</p>
+            <p>"Review: "Atomic Habits was a great read. I learned a lot and think it'll be helpful to a lot of people.""</p>
+        </div>
+        <div class="book-container">
+            <img src="assets/images/the-alchemist-book-cover.png" alt="book-cover-2">
+            <h2>The Alchemist</h2>
+            <p>Rating: 9/10</p>
+            <p>Date Read: 2025-06-08</p>
+            <p>"Review: "Coelho's writing is beautifully poetic but his message is what counts… he gives me hope and puts a smile on my face.""</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#fA").hide();
+            $("#btn1").click(function() {
+                $("#fE").hide();
+                $("#fD").hide();
+                $("#fA").slideToggle();
+            });
+        });
+        $(document).ready(function() {
+            $("#fE").hide();
+            $("#btn2").click(function() {
+                $("#fA").hide();
+                $("#fD").hide();
+                $("#fE").slideToggle();
+            });
+        });
+        $(document).ready(function() {
+            $("#fD").hide();
+            $("#btn3").click(function() {
+                $("#fA").hide();
+                $("#fE").hide();
+                $("#fD").slideToggle();
+            });
+        }); 
+    </script>
+</body>
+</html>
