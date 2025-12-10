@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Books Read</h1>
+    <h1>Book Read</h1>
     <hr />
     <div class="buttons">
         <button id="btn1">Add</button>
@@ -75,7 +75,7 @@
             const dateText = document.createElement("p");
             dateText.textContent = `Date Read: ${row.dateRead}`;
             const bookReview = document.createElement("p");
-            bookReview.textContent= `Review: "${row.review}"`;
+            bookReview.textContent= `"${row.review}"`;
             
             const container = document.createElement("div");
             container.classList.add("book-container");
@@ -94,5 +94,6 @@
     </script>
 </body>
 </html>
+
 
 
