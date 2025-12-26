@@ -1,12 +1,8 @@
 h1 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottam: 15px;
 }
 
 hr {
-    margin-top: 15px;
-    margin-bottam: 15px;
 }
 
 .buttons {
@@ -40,21 +36,16 @@ hr {
     flex-direction: column;
     align-items: center; 
     text-align: center;
-    margin-top: 15px;
-    margin-bottam: 15px;
 }
 
 h2 {
     width: 180px;
-    margin-top: 15px;
-    margin-bottam: 10px;
 }
 
 p {
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: 180px;
 }
+
 
 
 
