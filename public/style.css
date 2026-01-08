@@ -8,6 +8,10 @@ h1 {
     gap: 20px;
 }
 
+#bottam-hr {
+    padding-top: 8px;
+}
+
 .forms {
     display: flex;
     justify-content: center;
@@ -44,6 +48,7 @@ p {
     margin-bottom: 2px;
     width: 180px;
 }
+
 
 
 
